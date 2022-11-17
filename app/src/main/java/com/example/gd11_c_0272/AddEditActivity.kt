@@ -73,7 +73,7 @@ class AddEditActivity : AppCompatActivity() {
 
         val adapterProdi: ArrayAdapter<String> = ArrayAdapter<String>(this,
             R.layout.item_list, PRODI_LIST)
-        edFakultas!!.setAdapter(adapterProdi)
+        edProdi!!.setAdapter(adapterProdi)
     }
 
     private fun getMahasiswaById(id: Long){

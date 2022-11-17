@@ -114,8 +114,8 @@ class MainActivity : AppCompatActivity() {
     fun deleteMahasiswa(id: Long) {
         setLoading(true)
 
-        val stringRequest: StringRequest =
-            object : StringRequest(Method.DELETE, MahasiswaApi.DELETE_URL, Response.Listener { response ->
+        val stringRequest: StringRequest = object :
+            StringRequest(Method.DELETE, MahasiswaApi.DELETE_URL + id, Response.Listener { response ->
                 setLoading(false)
 
                 val gson = Gson()
